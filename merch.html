@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Madrid | Merch Store</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Raleway:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background: #0a0a0a; color: #fff; font-family: 'Raleway', sans-serif; }
+
+        .site-nav { position: fixed; top: 0; left: 0; width: 100%; z-index: 9999; background: rgba(0,0,0,0.92); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(252,3,98,0.3); }
+        .nav-inner { max-width: 1300px; margin: 0 auto; padding: 0 40px; display: flex; align-items: center; justify-content: space-between; height: 52px; }
+        .nav-logo { font-family: 'Cinzel', serif; font-size: 1rem; font-weight: 900; color: rgb(252,3,98); text-decoration: none; letter-spacing: 4px; }
+        .nav-links { display: flex; align-items: center; gap: 30px; }
+        .nav-links a { font-size: 0.72rem; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: #ccc; text-decoration: none; transition: color 0.2s ease; }
+        .nav-links a:hover { color: #fff; }
+        .nav-merch { background: rgb(252,3,98) !important; color: #fff !important; padding: 6px 18px; border-radius: 20px; }
+
+        .merch-hero { position: relative; padding: 140px 80px 80px; text-align: center; overflow: hidden; }
+        .merch-hero::before { content: ''; position: absolute; inset: 0; background: url('assets/old_barn.jpg') center/cover; opacity: 0.18; }
+        .merch-hero::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(10,10,10,0.4), #0a0a0a); }
+        .merch-hero-content { position: relative; z-index: 1; }
+        .merch-eyebrow { font-size: 0.8rem; font-weight: 700; letter-spacing: 6px; text-transform: uppercase; color: rgb(252,3,98); margin-bottom: 14px; }
+        .merch-heading { font-family: 'Cinzel', serif; font-size: 3.5rem; font-weight: 900; margin-bottom: 14px; }
+        .merch-subtext { font-size: 1rem; font-weight: 300; color: #aaa; }
+
+        .filter-bar { display: flex; justify-content: center; gap: 12px; padding: 40px 80px 20px; flex-wrap: wrap; }
+        .filter-btn { font-family: 'Raleway', sans-serif; font-size: 0.72rem; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; padding: 8px 22px; border-radius: 20px; border: 1px solid rgba(255,255,255,0.15); background: transparent; color: #aaa; cursor: pointer; transition: all 0.2s ease; }
+        .filter-btn:hover { border-color: rgb(252,3,98); color: #fff; }
+        .filter-btn.active { background: rgb(252,3,98); border-color: rgb(252,3,98); color: #fff; }
+
+        .product-section { padding: 20px 80px 100px; }
+        .product-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; max-width: 1200px; margin: 0 auto; }
+        .product-card { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1); border-radius: 18px; overflow: hidden; transition: transform 0.3s ease, border-color 0.3s ease; }
+        .product-card:hover { transform: translateY(-6px); border-color: rgba(252,3,98,0.5); }
+        .product-img-wrapper { position: relative; height: 240px; background: #111; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+        .product-img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; }
+        .product-card:hover .product-img { transform: scale(1.08); }
+        .product-emoji { font-size: 6rem; }
+        .product-badge { position: absolute; top: 14px; left: 14px; font-size: 0.62rem; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; background: rgb(252,3,98); padding: 4px 10px; border-radius: 20px; }
+        .product-info { padding: 22px; }
+        .product-category { font-size: 0.68rem; font-weight: 600; letter-spacing: 3px; text-transform: uppercase; color: rgb(252,3,98); margin-bottom: 6px; }
+        .product-name { font-family: 'Cinzel', serif; font-size: 1rem; font-weight: 700; margin-bottom: 8px; }
+        .product-desc { font-size: 0.78rem; font-weight: 300; color: #888; line-height: 1.6; margin-bottom: 16px; }
+        .product-footer { display: flex; align-items: center; justify-content: space-between; }
+        .product-price { font-family: 'Cinzel', serif; font-size: 1.3rem; font-weight: 900; color: rgb(252,3,98); }
+        .add-btn { font-family: 'Raleway', sans-serif; font-size: 0.72rem; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; background: rgb(252,3,98); color: #fff; border: none; padding: 8px 18px; border-radius: 20px; cursor: pointer; transition: background 0.2s ease; }
+        .add-btn:hover { background: #c9024f; }
+        .add-btn:active { transform: scale(0.97); }
+
+        .cart-toggle { position: fixed; bottom: 32px; right: 32px; z-index: 8000; background: rgb(252,3,98); color: #fff; border: none; border-radius: 50px; padding: 14px 22px; font-family: 'Raleway', sans-serif; font-size: 0.8rem; font-weight: 700; letter-spacing: 2px; cursor: pointer; display: flex; align-items: center; gap: 10px; box-shadow: 0 4px 24px rgba(252,3,98,0.4); transition: background 0.2s ease; }
+        .cart-toggle:hover { background: #c9024f; }
+        .cart-count { background: #fff; color: rgb(252,3,98); font-size: 0.75rem; font-weight: 900; width: 22px; height: 22px; border-radius: 50%; display: flex; align-items: center; justify-content: center; }
+
+        .cart-sidebar { position: fixed; top: 0; right: -420px; width: 400px; height: 100vh; background: #111; border-left: 1px solid rgba(252,3,98,0.3); z-index: 10000; display: flex; flex-direction: column; transition: right 0.35s cubic-bezier(0.4,0,0.2,1); box-shadow: -8px 0 40px rgba(0,0,0,0.6); }
+        .cart-sidebar.open { right: 0; }
+        .cart-header { display: flex; align-items: center; justify-content: space-between; padding: 24px; border-bottom: 1px solid rgba(255,255,255,0.08); }
+        .cart-title { font-family: 'Cinzel', serif; font-size: 1.1rem; font-weight: 900; }
+        .cart-close { background: none; border: none; color: #aaa; font-size: 1.4rem; cursor: pointer; line-height: 1; }
+        .cart-close:hover { color: #fff; }
+        .cart-items { flex: 1; overflow-y: auto; padding: 16px 24px; display: flex; flex-direction: column; gap: 14px; }
+        .cart-empty { text-align: center; color: #555; font-size: 0.85rem; margin-top: 60px; line-height: 2; }
+        .cart-item { display: flex; align-items: center; gap: 14px; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 14px; }
+        .cart-item-emoji { font-size: 2rem; flex-shrink: 0; }
+        .cart-item-img { width: 44px; height: 44px; object-fit: cover; border-radius: 8px; flex-shrink: 0; }
+        .cart-item-info { flex: 1; }
+        .cart-item-name { font-family: 'Cinzel', serif; font-size: 0.85rem; font-weight: 700; margin-bottom: 4px; }
+        .cart-item-price { font-size: 0.78rem; color: rgb(252,3,98); font-weight: 600; }
+        .cart-item-controls { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
+        .qty-btn { background: rgba(255,255,255,0.08); border: none; color: #fff; width: 26px; height: 26px; border-radius: 50%; cursor: pointer; font-size: 1rem; display: flex; align-items: center; justify-content: center; transition: background 0.2s ease; }
+        .qty-btn:hover { background: rgb(252,3,98); }
+        .qty-num { font-family: 'Cinzel', serif; font-size: 0.9rem; font-weight: 700; min-width: 18px; text-align: center; }
+        .cart-footer { padding: 20px 24px; border-top: 1px solid rgba(255,255,255,0.08); display: flex; flex-direction: column; gap: 14px; }
+        .cart-total-row { display: flex; justify-content: space-between; align-items: center; }
+        .cart-total-label { font-size: 0.8rem; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: #aaa; }
+        .cart-total-price { font-family: 'Cinzel', serif; font-size: 1.4rem; font-weight: 900; color: rgb(252,3,98); }
+        .checkout-btn { background: rgb(252,3,98); color: #fff; border: none; padding: 14px; border-radius: 12px; font-family: 'Raleway', sans-serif; font-size: 0.8rem; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; cursor: pointer; transition: background 0.2s ease; }
+        .checkout-btn:hover { background: #c9024f; }
+        .clear-btn { background: none; border: 1px solid rgba(255,255,255,0.1); color: #666; padding: 10px; border-radius: 12px; font-family: 'Raleway', sans-serif; font-size: 0.72rem; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; cursor: pointer; transition: all 0.2s ease; }
+        .clear-btn:hover { border-color: rgba(255,255,255,0.3); color: #aaa; }
+
+        .toast { position: fixed; bottom: 100px; right: 32px; background: #1a1a1a; border: 1px solid rgba(252,3,98,0.4); border-radius: 10px; padding: 12px 20px; font-size: 0.8rem; font-weight: 600; color: #fff; z-index: 11000; opacity: 0; transform: translateY(10px); transition: all 0.3s ease; pointer-events: none; }
+        .toast.show { opacity: 1; transform: translateY(0); }
+    </style>
+</head>
+<body>
+
+<nav class="site-nav">
+    <div class="nav-inner">
+        <a href="index.html" class="nav-logo">RM</a>
+        <div class="nav-links">
+            <a href="index.html#home">Home</a>
+            <a href="index.html#hall-of-fame">Hall of Fame</a>
+            <a href="index.html#squad">Squad</a>
+            <a href="index.html#victories">Victories</a>
+            <a href="index.html#trophies">Trophy Cabinet</a>
+            <a href="index.html#stadium">Stadium</a>
+            <a href="merch.html" class="nav-merch">Merch</a>
+        </div>
+    </div>
+</nav>
+
+<div class="merch-hero">
+    <div class="merch-hero-content">
+        <p class="merch-eyebrow">Official Fan Store</p>
+        <h1 class="merch-heading">Merch Store</h1>
+        <p class="merch-subtext">Wear the badge. Rep the legacy.</p>
+    </div>
+</div>
+
+<div class="filter-bar">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="jersey">Jerseys</button>
+    <button class="filter-btn" data-filter="cap">Caps</button>
+    <button class="filter-btn" data-filter="keychain">Keychains</button>
+</div>
+
+<div class="product-section">
+    <div class="product-grid" id="productGrid"></div>
+</div>
+
+<button class="cart-toggle" id="cartToggle">
+    🛒 Cart
+    <span class="cart-count" id="cartCount">0</span>
+</button>
+
+<div class="cart-sidebar" id="cartSidebar">
+    <div class="cart-header">
+        <span class="cart-title">Your Cart</span>
+        <button class="cart-close" id="cartClose">✕</button>
+    </div>
+    <div class="cart-items" id="cartItems">
+        <p class="cart-empty">Your cart is empty.<br>Add some merch above.</p>
+    </div>
+    <div class="cart-footer">
+        <div class="cart-total-row">
+            <span class="cart-total-label">Total</span>
+            <span class="cart-total-price" id="cartTotal">₹0</span>
+        </div>
+        <button class="checkout-btn" id="checkoutBtn">Checkout</button>
+        <button class="clear-btn" id="clearBtn">Clear Cart</button>
+    </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+const products = [
+    { id: 1, name: "Home Jersey 2025/26", category: "jersey", price: 3499, desc: "The iconic all-white home kit. Adidas x Real Madrid.", emoji: "👕", image: "assets/jersey2526.webp", badge: "New Season" },
+    { id: 2, name: "Away Jersey 2025/26", category: "jersey", price: 3499, desc: "Navy blue away kit — clean, sharp, Madridista.", emoji: "👕", image: "assets/awayjersey.webp", badge: "New Season" },
+    { id: 3, name: "Bellingham #5 Jersey", category: "jersey", price: 3799, desc: "Home kit with Bellingham's name and number printed.", emoji: "👕", image: "assets/bellinghamjersey.jpg", badge: "Fan Favourite" },
+    { id: 4, name: "Mbappé #10 Jersey", category: "jersey", price: 3799, desc: "The number 10 jersey. Mbappé's debut season.", emoji: "👕", image: "assets/mbappejersey.jpg", badge: "Hot" },
+    { id: 5, name: "Vinicius Jr #7 Jersey", category: "jersey", price: 3799, desc: "The magic winger's jersey — UCL Final edition.", emoji: "👕", image: "assets/vinijersey.jpg", badge: "Limited" },
+    { id: 6, name: "Snapback Cap — White", category: "cap", price: 1299, desc: "White snapback with embroidered Real Madrid crest.", emoji: "🧢", image: "assets/cap_white.jpg", badge: "Classic" },
+    { id: 7, name: "Fitted Cap — Black", category: "cap", price: 1199, desc: "Black fitted cap. Minimal crest. Maximum style.", emoji: "🧢", image: "assets/cap_black.webp", badge: "" },
+    { id: 8, name: "Dad Cap — Navy", category: "cap", price: 999, desc: "Relaxed fit cap with gold embroidered badge.", emoji: "🧢", image: "assets/dad_cap.webp", badge: "Best Seller" },
+    { id: 9, name: "UCL Cap — Gold", category: "cap", price: 1399, desc: "Gold edition cap to celebrate 15 European Cups.", emoji: "🧢", image: "assets/cap_gold.jpg", badge: "Limited" },
+    { id: 10, name: "Crest Keychain", category: "keychain", price: 349, desc: "Metal Real Madrid crest keychain — gold finish.", emoji: "🔑", image: "assets/keychain_crest.webp", badge: "" },
+    { id: 11, name: "UCL Trophy Keychain", category: "keychain", price: 399, desc: "Miniature Champions League trophy keychain.", emoji: "🔑", image: "assets/keychain_trophy.jpg", badge: "Popular" },
+    { id: 12, name: "Hala Madrid Keychain", category: "keychain", price: 299, desc: "Engraved with 'Hala Madrid' on the back.", emoji: "🔑", image: "assets/keychain_hala.jpg", badge: "" }
+];
+
+let cart = [];
+
+function renderProducts(filter) {
+    const grid = document.getElementById('productGrid');
+    grid.innerHTML = '';
+
+    const filtered = filter === 'all' ? products : products.filter(p => p.category === filter);
+
+    filtered.forEach(product => {
+        const card = document.createElement('div');
+        card.className = 'product-card';
+        card.innerHTML = `
+            <div class="product-img-wrapper">
+                <img src="${product.image}" alt="${product.name}" class="product-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <span class="product-emoji" style="display:none;">${product.emoji}</span>
+                ${product.badge ? `<span class="product-badge">${product.badge}</span>` : ''}
+            </div>
+            <div class="product-info">
+                <p class="product-category">${product.category}</p>
+                <h3 class="product-name">${product.name}</h3>
+                <p class="product-desc">${product.desc}</p>
+                <div class="product-footer">
+                    <span class="product-price">₹${product.price.toLocaleString('en-IN')}</span>
+                    <button class="add-btn" data-id="${product.id}">Add to Cart</button>
+                </div>
+            </div>
+        `;
+        grid.appendChild(card);
+    });
+
+    document.querySelectorAll('.add-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const id = +btn.getAttribute('data-id');
+            addToCart(id);
+        });
+    });
+}
+
+function addToCart(id) {
+    const product = products.find(p => p.id === id);
+    const existing = cart.find(item => item.id === id);
+
+    if (existing) {
+        existing.quantity += 1;
+    } else {
+        cart.push({ id: product.id, name: product.name, price: product.price, emoji: product.emoji, image: product.image, quantity: 1 });
+    }
+
+    updateCart();
+    showToast(product.name + ' added to cart');
+}
+
+function changeQty(id, delta) {
+    const item = cart.find(item => item.id === id);
+    if (!item) return;
+
+    item.quantity += delta;
+
+    if (item.quantity <= 0) {
+        cart = cart.filter(item => item.id !== id);
+    }
+
+    updateCart();
+}
+
+function updateCart() {
+    const cartItems = document.getElementById('cartItems');
+    const cartCount = document.getElementById('cartCount');
+    const cartTotal = document.getElementById('cartTotal');
+
+    const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+    cartCount.textContent = totalItems;
+
+    const total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
+    cartTotal.textContent = '₹' + total.toLocaleString('en-IN');
+
+    if (cart.length === 0) {
+        cartItems.innerHTML = '<p class="cart-empty">Your cart is empty.<br>Add some merch above.</p>';
+        return;
+    }
+
+    cartItems.innerHTML = '';
+    cart.forEach(item => {
+        const div = document.createElement('div');
+        div.className = 'cart-item';
+        div.innerHTML = `
+            <img src="${item.image}" alt="${item.name}" class="cart-item-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <span class="cart-item-emoji" style="display:none;">${item.emoji}</span>
+            <div class="cart-item-info">
+                <p class="cart-item-name">${item.name}</p>
+                <p class="cart-item-price">₹${(item.price * item.quantity).toLocaleString('en-IN')}</p>
+            </div>
+            <div class="cart-item-controls">
+                <button class="qty-btn" data-id="${item.id}" data-delta="-1">−</button>
+                <span class="qty-num">${item.quantity}</span>
+                <button class="qty-btn" data-id="${item.id}" data-delta="1">+</button>
+            </div>
+        `;
+        cartItems.appendChild(div);
+    });
+
+    document.querySelectorAll('.qty-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const id = +btn.getAttribute('data-id');
+            const delta = +btn.getAttribute('data-delta');
+            changeQty(id, delta);
+        });
+    });
+}
+
+function showToast(message) {
+    const toast = document.getElementById('toast');
+    toast.textContent = '✓  ' + message;
+    toast.classList.add('show');
+    setTimeout(() => toast.classList.remove('show'), 2200);
+}
+
+document.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        renderProducts(btn.getAttribute('data-filter'));
+    });
+});
+
+document.getElementById('cartToggle').addEventListener('click', () => {
+    document.getElementById('cartSidebar').classList.add('open');
+});
+document.getElementById('cartClose').addEventListener('click', () => {
+    document.getElementById('cartSidebar').classList.remove('open');
+});
+
+document.getElementById('clearBtn').addEventListener('click', () => {
+    cart = [];
+    updateCart();
+});
+
+document.getElementById('checkoutBtn').addEventListener('click', () => {
+    if (cart.length === 0) {
+        showToast('Your cart is empty!');
+        return;
+    }
+    alert('Hala Madrid! 🤍\n\nThis is a fan project — no real checkout yet.\nTotal: ₹' + cart.reduce((s, i) => s + i.price * i.quantity, 0).toLocaleString('en-IN'));
+});
+
+renderProducts('all');
+updateCart();
+</script>
+</body>
+</html>

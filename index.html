@@ -7,79 +7,58 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Raleway:wght@300;400;600&family=Dancing+Script:wght@700&family=Permanent+Marker&display=swap" rel="stylesheet">
-
 </head>
 <body>
-
-<!-- ===== TOP HEADER BAR ===== -->
 <header class="top-header">
-
-    <!-- Top Border Accent Line -->
     <div class="top-border-line"></div>
-
-    <!-- Header Content -->
     <div class="header-inner">
-
-        <!-- LEFT: Real Madrid Logo -->
-        <div class="header-logo">
+        <a href="#home" class="header-logo">
             <img src="assets/rmlogo.png" alt="Real Madrid Logo" class="rm-logo">
+        </a>
+        <nav class="header-nav">
+            <a href="#home">Home</a>
+            <a href="#hall-of-fame">Hall of Fame</a>
+            <a href="#squad">Squad</a>
+            <a href="#victories">Victories</a>
+            <a href="#trophies">Trophy Cabinet</a>
+            <a href="#stadium">Stadium</a>
+        </nav>
+        <div class="header-right">
+            <div class="sponsors">
+                <img src="assets/adidas logo.png" alt="Adidas" class="sponsor-logo">
+                <img src="assets/emirates.png" alt="Fly Emirates" class="sponsor-logo">
+            </div>
+            <a href="merch.html" class="nav-merch">Merch</a>
         </div>
-
-        <!-- CENTER: Welcome Text -->
-        <div class="header-title">
+    </div>
+</header>
+<section class="hero-section" id="home">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+        <div class="hero-left">
+            <p class="hero-eyebrow">Est. 1902 · Madrid, Spain</p>
             <p class="welcome-text">Welcome to the Website of the</p>
             <h1 class="champions-text">European Champions</h1>
         </div>
-
-       <!-- RIGHT: Hala Madrid Logo+ Sponsors -->
-<div class="header-right">
-    <img src="assets/Hala Madrid.png" alt="Hala Madrid" class="hala-logo">
-    <div class="sponsors">
-        <img src="assets/adidas logo.png" alt="Adidas" class="sponsor-logo">
-        <img src="assets/emirates.png" alt="Fly Emirates" class="sponsor-logo">
+        <div class="hero-right">
+            <p class="hero-para">
+                Real Madrid Club de Fútbol was founded in 1902 in Madrid, Spain
+                and for over a century, no club on earth has matched what they have built.
+                Draped in iconic white, Los Blancos have claimed a record 15 UEFA Champions
+                League titles and 35 La Liga crowns, rewriting the boundaries of what a
+                football club can achieve. The Santiago Bernabéu has witnessed legends walk
+                its turf and create moments that football will never forget.
+                This is not just a football club... This is the Team of Dreams.
+                This is the standard everything else is measured against.
+            </p>
+        </div>
     </div>
-</div>
-</header>
-<!-- ===== HERO/STADIUM SECTION ===== -->
-<section class="hero-section">
-
-    <!-- Background Stadium Image -->
-    <div class="hero-bg"></div>
-
-    <!-- Dark Overlay -->
-    <div class="hero-overlay"></div>
-
-    <!-- Content -->
-    <div class="hero-content">
-
-        <p class="hero-eyebrow">Est. 1902 · Madrid, Spain</p>
-
-        <p class="hero-para">
-            Real Madrid Club de Fútbol was founded in 1902 in Madrid, Spain
-            and for over a century, no club on earth has matched what they have built.
-            Draped in iconic white, Los Blancos have claimed a record 15 UEFA Champions
-            League titles and 35 La Liga crowns, rewriting the boundaries of what a
-            football club can achieve. The Santiago Bernabéu has witnessed legends walk
-            its turf and create moments that football will never forget.
-            This is not just a football club... This is the Team of Dreams.
-            This is the standard everything else is measured against.
-        </p>
-
-    </div>
-
 </section>
-<!-- ===== QUICK TEAM OVERVIEW ===== -->
 <section class="overview-section">
-
-    <!-- Background Image -->
     <div class="overview-bg"></div>
-    <!-- Dark Overlay -->
     <div class="overview-overlay"></div>
-
-    <!-- Content -->
     <div class="overview-content">
-
-        <!-- Left: Narrative Text -->
         <div class="overview-narrative">
             <h2 class="overview-heading">Built on Greatness.</h2>
             <p class="overview-subtext">
@@ -87,56 +66,39 @@
                 redefining what it means to be the best.
             </p>
         </div>
-
-        <!-- Right: Staircase Cards -->
         <div class="overview-staircase">
-
             <div class="overview-card stair-1">
                 <span class="card-number" data-target="1902" data-prefix="" data-suffix="">0</span>
                 <span class="card-label">Foundation Year</span>
             </div>
-
             <div class="overview-card stair-2">
                 <span class="card-number" data-target="15" data-prefix="" data-suffix="">0</span>
                 <span class="card-label">UCL Titles</span>
             </div>
-
             <div class="overview-card stair-3">
                 <span class="card-number" data-target="35" data-prefix="" data-suffix="">0</span>
                 <span class="card-label">La Liga Titles</span>
             </div>
-
             <div class="overview-card stair-4">
                 <span class="card-number" data-target="81000" data-prefix="" data-suffix="+">0</span>
                 <span class="card-label">Stadium Capacity</span>
             </div>
-
             <div class="overview-card stair-5">
                 <span class="card-number" data-target="1" data-prefix="#" data-suffix="">0</span>
                 <span class="card-label">UEFA Club Rank</span>
             </div>
-
         </div>
-
     </div>
-
 </section>
-<!-- ===== HALL OF FAME ===== -->
 <section id="hall-of-fame">
-
-    <!-- Section Title -->
     <div class="hof-title-block">
         <p class="hof-eyebrow">Hall of Fame</p>
         <h2 class="hof-heading">The Immortals</h2>
         <p class="hof-subtext">Those who did not just play for Real Madrid...BUT BECAME IT.</p>
     </div>
-
-    <!-- ===== CR7 CARD ===== -->
     <div class="hof-card-wrapper">
         <div class="hof-card" data-player-id="cr7">
             <div class="hof-card-inner">
-
-                <!-- FRONT -->
                 <div class="hof-card-front">
                     <div class="player-badge">EL BICHO</div>
                     <div class="player-image-container">
@@ -149,18 +111,14 @@
                     </div>
                     <p class="flip-hint">Hover to see stats</p>
                 </div>
-
-                <!-- BACK -->
                 <div class="hof-card-back">
                     <h3 class="player-name-back">Cristiano Ronaldo</h3>
-
                     <p class="player-bio">
-                        Called "El Bicho" — The Beast , Cristiano Ronaldo 
-                        transcended every limit at Real Madrid. 450 goals. 9 seasons. 
-                        4 Champions League titles. He did not just play for this club. 
+                        Called "El Bicho" — The Beast — by the world, Cristiano Ronaldo
+                        transcended every limit at Real Madrid. 450 goals. 9 seasons.
+                        4 Champions League titles. He did not just play for this club.
                         He became its greatest weapon.
                     </p>
-
                     <div class="player-achievements">
                         <h4 class="back-section-title">Major Achievements</h4>
                         <ul>
@@ -171,10 +129,8 @@
                             <li>3x UCL Top Scorer Consecutively</li>
                         </ul>
                     </div>
-
                     <div class="player-stats-dashboard">
                         <h4 class="back-section-title">Career Statistics</h4>
-
                         <div class="stat-row">
                             <span class="stat-label-text">Appearances</span>
                             <div class="stat-bar-container">
@@ -182,7 +138,6 @@
                             </div>
                             <span class="stat-number-text">438</span>
                         </div>
-
                         <div class="stat-row">
                             <span class="stat-label-text">Goals</span>
                             <div class="stat-bar-container">
@@ -190,7 +145,6 @@
                             </div>
                             <span class="stat-number-text">450</span>
                         </div>
-
                         <div class="stat-row">
                             <span class="stat-label-text">Assists</span>
                             <div class="stat-bar-container">
@@ -198,7 +152,6 @@
                             </div>
                             <span class="stat-number-text">131</span>
                         </div>
-
                         <div class="stat-row">
                             <span class="stat-label-text">Ballon d'Or</span>
                             <div class="stat-bar-container">
@@ -206,23 +159,15 @@
                             </div>
                             <span class="stat-number-text">4</span>
                         </div>
-
                     </div>
                 </div>
-                <!-- End Back -->
-
             </div>
         </div>
     </div>
-    <!-- End CR7 Card -->
-
-    <!-- ===== CR7 CLUTCH MOMENTS ===== -->
     <div class="clutch-section">
         <p class="hof-eyebrow">Clutch Moments</p>
         <h3 class="clutch-heading">When It Mattered Most</h3>
-
         <div class="clutch-grid">
-
             <div class="clutch-card">
                 <div class="clutch-img-wrapper">
                     <img src="assets/bicycle_ronaldo.webp" alt="Bicycle Kick vs Juventus" class="clutch-img">
@@ -236,13 +181,11 @@
                     <p class="clutch-opponent">vs Juventus</p>
                 </div>
             </div>
-
             <div class="clutch-card">
                 <div class="clutch-img-wrapper">
                     <img src="assets/hattrick_bayern.jpg" alt="Hat-trick vs Bayern" class="clutch-img">
                     <div class="clutch-overlay">
                         <p class="clutch-desc">Three goals. One man. Bayern dismantled in  their own Den. He became the 1st 𝙚𝙫𝙚𝙧 player to reach 100 UCL goals </p>
-                    
                     </div>
                 </div>
                 <div class="clutch-info">
@@ -251,7 +194,6 @@
                     <p class="clutch-opponent">vs Bayern Munich</p>
                 </div>
             </div>
-
             <div class="clutch-card">
                 <div class="clutch-img-wrapper">
                     <img src="assets/2016cr7.jpg" alt="Winning Penalty 2016" class="clutch-img">
@@ -265,7 +207,6 @@
                     <p class="clutch-opponent">vs Atletico Madrid</p>
                 </div>
             </div>
-
             <div class="clutch-card">
                 <div class="clutch-img-wrapper">
                     <img src="assets/copa_cr7.jpg" alt="Copa Del Rey vs Barcelona" class="clutch-img">
@@ -279,7 +220,6 @@
                     <p class="clutch-opponent">vs Barcelona</p>
                 </div>
             </div>
-
             <div class="clutch-card">
                 <div class="clutch-img-wrapper">
                     <img src="assets/cr7-hattrick-barca.jpg" alt="Hat-trick vs Barcelona" class="clutch-img">
@@ -308,13 +248,9 @@
 </div>
         </div>
     </div>
-    <!-- End Clutch Moments -->
-     <!-- ===== LUKA MODRIC ===== -->
 <div class="hof-card-wrapper modric-wrapper">
     <div class="hof-card" data-player-id="modric">
         <div class="hof-card-inner">
-
-            <!-- FRONT -->
             <div class="hof-card-front">
                 <div class="player-badge">THE MAESTRO</div>
                 <div class="player-image-container">
@@ -327,11 +263,8 @@
                 </div>
                 <p class="flip-hint">Hover to see stats</p>
             </div>
-
-            <!-- BACK -->
             <div class="hof-card-back">
                 <h3 class="player-name-back">Luka Modric</h3>
-
                 <p class="player-bio">
                     Called "The Maestro" by the footballing world,
                     Luka Modric redefined what a midfielder could be.
@@ -339,7 +272,6 @@
                     He won the Ballon d'Or in 2018, ending a decade of Ronaldo
                     and Messi dominance, and did it wearing all white.
                 </p>
-
                 <div class="player-achievements">
                     <h4 class="back-section-title">Major Achievements</h4>
                     <ul>
@@ -350,10 +282,8 @@
                         <li>UEFA Champions League Midfield Master</li>
                     </ul>
                 </div>
-
                 <div class="player-stats-dashboard">
                     <h4 class="back-section-title">Career Statistics</h4>
-
                     <div class="stat-row">
                         <span class="stat-label-text">Apps</span>
                         <div class="stat-bar-container">
@@ -361,7 +291,6 @@
                         </div>
                         <span class="stat-number-text">490</span>
                     </div>
-
                     <div class="stat-row">
                         <span class="stat-label-text">Goals</span>
                         <div class="stat-bar-container">
@@ -369,7 +298,6 @@
                         </div>
                         <span class="stat-number-text">40</span>
                     </div>
-
                     <div class="stat-row">
                         <span class="stat-label-text">Assists</span>
                         <div class="stat-bar-container">
@@ -377,7 +305,6 @@
                         </div>
                         <span class="stat-number-text">95</span>
                     </div>
-
                     <div class="stat-row">
                         <span class="stat-label-text">Ballon d'Or</span>
                         <div class="stat-bar-container">
@@ -385,21 +312,14 @@
                         </div>
                         <span class="stat-number-text">1</span>
                     </div>
-
                 </div>
             </div>
-            <!-- End Back -->
-
         </div>
     </div>
 </div>
-<!-- End Modric -->
- <!-- ===== KARIM BENZEMA ===== -->
 <div class="hof-card-wrapper benzema-wrapper">
     <div class="hof-card" data-player-id="benzema">
         <div class="hof-card-inner">
-
-            <!-- FRONT -->
             <div class="hof-card-front">
                 <div class="player-badge">KING KARIM</div>
                 <div class="player-image-container">
@@ -412,11 +332,8 @@
                 </div>
                 <p class="flip-hint">Hover to see stats</p>
             </div>
-
-            <!-- BACK -->
             <div class="hof-card-back">
                 <h3 class="player-name-back">Karim Benzema</h3>
-
                 <p class="player-bio">
                     Called "King Karim" by the world, Karim Benzema
                     spent 14 years at Real Madrid evolving from a supporting act
@@ -425,7 +342,6 @@
                     He claimed his Ballon d'Or in 2022 at the age of 34,
                     proving that greatness has no expiry date.
                 </p>
-
                 <div class="player-achievements">
                     <h4 class="back-section-title">Major Achievements</h4>
                     <ul>
@@ -436,10 +352,8 @@
                         <li>UCL Top Scorer 2021/22</li>
                     </ul>
                 </div>
-
                 <div class="player-stats-dashboard">
                     <h4 class="back-section-title">Career Statistics</h4>
-
                     <div class="stat-row">
                         <span class="stat-label-text">Apps</span>
                         <div class="stat-bar-container">
@@ -447,7 +361,6 @@
                         </div>
                         <span class="stat-number-text">648</span>
                     </div>
-
                     <div class="stat-row">
                         <span class="stat-label-text">Goals</span>
                         <div class="stat-bar-container">
@@ -455,7 +368,6 @@
                         </div>
                         <span class="stat-number-text">354</span>
                     </div>
-
                     <div class="stat-row">
                         <span class="stat-label-text">Assists</span>
                         <div class="stat-bar-container">
@@ -463,7 +375,6 @@
                         </div>
                         <span class="stat-number-text">165</span>
                     </div>
-
                     <div class="stat-row">
                         <span class="stat-label-text">Ballon d'Or</span>
                         <div class="stat-bar-container">
@@ -471,21 +382,14 @@
                         </div>
                         <span class="stat-number-text">1</span>
                     </div>
-
                 </div>
             </div>
-            <!-- End Back -->
-
         </div>
     </div>
 </div>
-<!-- End Benzema -->
- <!-- ===== TONI KROOS ===== -->
 <div class="hof-card-wrapper kroos-wrapper">
     <div class="hof-card" data-player-id="kroos">
         <div class="hof-card-inner">
-
-            <!-- FRONT -->
             <div class="hof-card-front">
                 <div class="player-badge">THE GERMAN SNIPER</div>
                 <div class="player-image-container">
@@ -498,11 +402,8 @@
                 </div>
                 <p class="flip-hint">Hover to see stats</p>
             </div>
-
-            <!-- BACK -->
             <div class="hof-card-back">
                 <h3 class="player-name-back">Toni Kroos</h3>
-
                 <p class="player-bio">
                     Called "The German Sniper" by the world, Toni Kroos
                     did not run the game with pace or power.
@@ -511,7 +412,6 @@
                     Every free kick a threat. Every game a masterclass.
                     The most elegant destroyer football has ever seen.
                 </p>
-
                 <div class="player-achievements">
                     <h4 class="back-section-title">Major Achievements</h4>
                     <ul>
@@ -522,10 +422,8 @@
                         <li>Most Accurate Passer in UCL History</li>
                     </ul>
                 </div>
-
                 <div class="player-stats-dashboard">
                     <h4 class="back-section-title">Career Statistics</h4>
-
                     <div class="stat-row">
                         <span class="stat-label-text">Apps</span>
                         <div class="stat-bar-container">
@@ -533,7 +431,6 @@
                         </div>
                         <span class="stat-number-text">463</span>
                     </div>
-
                     <div class="stat-row">
                         <span class="stat-label-text">Goals</span>
                         <div class="stat-bar-container">
@@ -541,7 +438,6 @@
                         </div>
                         <span class="stat-number-text">28</span>
                     </div>
-
                     <div class="stat-row">
                         <span class="stat-label-text">Assists</span>
                         <div class="stat-bar-container">
@@ -549,7 +445,6 @@
                         </div>
                         <span class="stat-number-text">107</span>
                     </div>
-
                     <div class="stat-row">
                         <span class="stat-label-text">UCL Titles</span>
                         <div class="stat-bar-container">
@@ -557,21 +452,14 @@
                         </div>
                         <span class="stat-number-text">5</span>
                     </div>
-
                 </div>
             </div>
-            <!-- End Back -->
-
         </div>
     </div>
 </div>
-<!-- End Kroos -->
- <!-- ===== SERGIO RAMOS ===== -->
 <div class="hof-card-wrapper ramos-wrapper">
     <div class="hof-card" data-player-id="ramos">
         <div class="hof-card-inner">
-
-            <!-- FRONT -->
             <div class="hof-card-front">
                 <div class="player-badge">EL CAPITÁN</div>
                 <div class="player-image-container">
@@ -584,19 +472,15 @@
                 </div>
                 <p class="flip-hint">Hover to see stats</p>
             </div>
-
-            <!-- BACK -->
             <div class="hof-card-back">
                 <h3 class="player-name-back">Sergio Ramos</h3>
-
                 <p class="player-bio">
-                    "El Capitán." The wall. The heartbeat. Sergio Ramos spent 
-                    16 years as the spine of Real Madrid — a defender who refused 
-                    to lose. Immortalised forever for his 93rd-minute header in 
-                    the 2014 UCL Final, the goal that birthed La Décima. 
+                    "El Capitán." The wall. The heartbeat. Sergio Ramos spent
+                    16 years as the spine of Real Madrid — a defender who refused
+                    to lose. Immortalised forever for his 93rd-minute header in
+                    the 2014 UCL Final, the goal that birthed La Décima.
                     When Madrid needed saving, Ramos was always the one who answered.
                 </p>
-
                 <div class="player-achievements">
                     <h4 class="back-section-title">Major Achievements</h4>
                     <ul>
@@ -607,10 +491,8 @@
                         <li>Real Madrid All-Time Appearances Leader (CB)</li>
                     </ul>
                 </div>
-
                 <div class="player-stats-dashboard">
                     <h4 class="back-section-title">Career Statistics</h4>
-
                     <div class="stat-row">
                         <span class="stat-label-text">Apps</span>
                         <div class="stat-bar-container">
@@ -618,7 +500,6 @@
                         </div>
                         <span class="stat-number-text">671</span>
                     </div>
-
                     <div class="stat-row">
                         <span class="stat-label-text">Goals</span>
                         <div class="stat-bar-container">
@@ -626,7 +507,6 @@
                         </div>
                         <span class="stat-number-text">101</span>
                     </div>
-
                     <div class="stat-row">
                         <span class="stat-label-text">UCL Titles</span>
                         <div class="stat-bar-container">
@@ -634,7 +514,6 @@
                         </div>
                         <span class="stat-number-text">4</span>
                     </div>
-
                     <div class="stat-row">
                         <span class="stat-label-text">La Liga</span>
                         <div class="stat-bar-container">
@@ -642,21 +521,14 @@
                         </div>
                         <span class="stat-number-text">5</span>
                     </div>
-
                 </div>
             </div>
-            <!-- End Back -->
-
         </div>
     </div>
 </div>
-<!-- End Ramos -->
- <!-- ===== MARCELO ===== -->
 <div class="hof-card-wrapper marcelo-wrapper">
     <div class="hof-card" data-player-id="marcelo">
         <div class="hof-card-inner">
-
-            <!-- FRONT -->
             <div class="hof-card-front">
                 <div class="player-badge">ULTIMATE CHAMPION</div>
                 <div class="player-image-container">
@@ -669,21 +541,17 @@
                 </div>
                 <p class="flip-hint">Hover to see stats</p>
             </div>
-
-            <!-- BACK -->
             <div class="hof-card-back">
                 <h3 class="player-name-back">Marcelo</h3>
-
                 <p class="player-bio">
-                    The greatest left back in Real Madrid's history. 
-                    Signed at just 18, Marcelo spent 16 seasons becoming 
-                    the most decorated player in the club's entire history — 
-                    25 trophies in white. More than anyone. Ever. 
-                    A Brazilian with a Madridista soul, he scored in the 
-                    Décima final and captained the side that won the 
+                    The greatest left back in Real Madrid's history.
+                    Signed at just 18, Marcelo spent 16 seasons becoming
+                    the most decorated player in the club's entire history —
+                    25 trophies in white. More than anyone. Ever.
+                    A Brazilian with a Madridista soul, he scored in the
+                    Décima final and captained the side that won the
                     Decimocuarta. He didn't just play the left flank. He owned it.
                 </p>
-
                 <div class="player-achievements">
                     <h4 class="back-section-title">Major Achievements</h4>
                     <ul>
@@ -694,10 +562,8 @@
                         <li>Most Assists by a Defender in La Liga History</li>
                     </ul>
                 </div>
-
                 <div class="player-stats-dashboard">
                     <h4 class="back-section-title">Career Statistics</h4>
-
                     <div class="stat-row">
                         <span class="stat-label-text">Apps</span>
                         <div class="stat-bar-container">
@@ -705,7 +571,6 @@
                         </div>
                         <span class="stat-number-text">546</span>
                     </div>
-
                     <div class="stat-row">
                         <span class="stat-label-text">Goals</span>
                         <div class="stat-bar-container">
@@ -713,7 +578,6 @@
                         </div>
                         <span class="stat-number-text">38</span>
                     </div>
-
                     <div class="stat-row">
                         <span class="stat-label-text">Assists</span>
                         <div class="stat-bar-container">
@@ -721,7 +585,6 @@
                         </div>
                         <span class="stat-number-text">103</span>
                     </div>
-
                     <div class="stat-row">
                         <span class="stat-label-text">Trophies</span>
                         <div class="stat-bar-container">
@@ -729,101 +592,67 @@
                         </div>
                         <span class="stat-number-text">25</span>
                     </div>
-
                 </div>
             </div>
-            <!-- End Back -->
-
         </div>
     </div>
 </div>
-<!-- End Marcelo -->
-
 </section>
-<!-- ===== TEAM STATISTICS DASHBOARD ===== -->
 <section class="stats-dashboard">
-
-    <!-- Dark Overlay -->
     <div class="stats-overlay"></div>
-
-    <!-- Content -->
     <div class="stats-content">
-
-        <!-- Title Block -->
         <p class="stats-eyebrow">By The Numbers</p>
         <h2 class="stats-heading">All-Time Club Records</h2>
         <p class="stats-subtext">The marks of greatness that define a century of dominance.</p>
-
-        <!-- Records Grid -->
         <div class="stats-grid">
-
             <div class="record-card">
-                
                 <span class="record-number">450</span>
                 <h4 class="record-title">All-Time Top Scorer</h4>
                 <p class="record-player">Cristiano Ronaldo</p>
                 <p class="record-desc">450 goals in just 9 seasons. Unmatched.</p>
             </div>
-
             <div class="record-card">
-                
                 <span class="record-number">338</span>
                 <h4 class="record-title">All-Time Most Assists</h4>
                 <p class="record-player">Marcelo</p>
                 <p class="record-desc">103 assists — the most by any defender in La Liga history.</p>
             </div>
-
             <div class="record-card">
-                
                 <span class="record-number">741</span>
                 <h4 class="record-title">Most Appearances</h4>
                 <p class="record-player">Raúl González</p>
                 <p class="record-desc">741 appearances across 16 seasons of total devotion.</p>
             </div>
-
             <div class="record-card">
-               
                 <span class="record-number">5</span>
                 <h4 class="record-title">Most UCL Titles (Player)</h4>
                 <p class="record-player">Marcelo · Modrić · Kroos · Benzema · Ramos</p>
                 <p class="record-desc">Five European Cups. A generation of giants.</p>
             </div>
-
             <div class="record-card">
-                
                 <span class="record-number">16</span>
                 <h4 class="record-title">Longest Serving Players</h4>
                 <p class="record-player">Raúl · Marcelo · Ramos</p>
                 <p class="record-desc">16 seasons each. Loyalty written in white.</p>
             </div>
-
             <div class="record-card">
-               
                 <span class="record-number">6</span>
                 <h4 class="record-title">Most La Liga Titles (Player)</h4>
                 <p class="record-player">Marcelo</p>
                 <p class="record-desc">Six league crowns — the ultimate team player.</p>
             </div>
-
         </div>
     </div>
 </section>
-<!-- ===== CURRENT SQUAD 2025/26 ===== -->
-<section class="squad-section">
-
+<section class="squad-section" id="squad">
     <div class="squad-overlay"></div>
-
     <div class="squad-content">
-
         <p class="squad-eyebrow">2025 / 26 Season</p>
         <h2 class="squad-heading">The Current Squad</h2>
         <p class="squad-subtext">The men in white carrying the legacy forward.</p>
-
-        <!-- ── GOALKEEPERS ── -->
         <div class="squad-group">
             <h3 class="squad-position-title">Goalkeepers</h3>
             <div class="squad-grid">
-
                 <div class="squad-card">
                     <div class="squad-card-inner">
                         <div class="squad-front">
@@ -860,7 +689,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="squad-card">
                     <div class="squad-card-inner">
                         <div class="squad-front">
@@ -897,15 +725,11 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
-
-        <!-- ── DEFENDERS ── -->
         <div class="squad-group">
             <h3 class="squad-position-title">Defenders</h3>
             <div class="squad-grid">
-
                 <div class="squad-card">
                     <div class="squad-card-inner">
                         <div class="squad-front">
@@ -914,7 +738,7 @@
                                 <span class="squad-number">#12</span>
                                 <h4 class="squad-name">Trent Alexander-Arnold</h4>
                                 <p class="squad-role">Right Back</p>
-                                <p class="squad-nation">🏴󠁧󠁢󠁥󠁮󠁧󠁿 England</p>
+                                <p class="squad-nation">England</p>
                                 <p class="squad-bio">One of the most technically gifted fullbacks ever. His passing range and vision from right back are completely unique in world football.</p>
                             </div>
                         </div>
@@ -942,7 +766,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="squad-card">
                     <div class="squad-card-inner">
                         <div class="squad-front">
@@ -979,7 +802,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="squad-card">
                     <div class="squad-card-inner">
                         <div class="squad-front">
@@ -988,7 +810,7 @@
                                 <span class="squad-number">#22</span>
                                 <h4 class="squad-name">Antonio Rüdiger</h4>
                                 <p class="squad-role">Centre Back</p>
-                                <p class="squad-nation">🇩🇪 Germany</p>
+                                <p class="squad-nation"> Germany</p>
                                 <p class="squad-bio">Fearless. Ferocious. Rüdiger brings an intensity to Real Madrid's defence that strikers genuinely fear. A commanding presence every single game.</p>
                             </div>
                         </div>
@@ -1016,7 +838,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="squad-card">
                     <div class="squad-card-inner">
                         <div class="squad-front">
@@ -1025,7 +846,7 @@
                                 <span class="squad-number">#24</span>
                                 <h4 class="squad-name">Dean Huijsen</h4>
                                 <p class="squad-role">Centre Back</p>
-                                <p class="squad-nation">🇪🇸 Spain</p>
+                                <p class="squad-nation">Spain</p>
                                 <p class="squad-bio">The future of Madrid's defence. Tall, composed and technically gifted, Huijsen is one of Europe's most exciting young centre backs.</p>
                             </div>
                         </div>
@@ -1053,7 +874,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="squad-card">
                     <div class="squad-card-inner">
                         <div class="squad-front">
@@ -1090,7 +910,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="squad-card">
                     <div class="squad-card-inner">
                         <div class="squad-front">
@@ -1127,7 +946,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="squad-card">
                     <div class="squad-card-inner">
                         <div class="squad-front">
@@ -1164,7 +982,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="squad-card">
                     <div class="squad-card-inner">
                         <div class="squad-front">
@@ -1201,7 +1018,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="squad-card">
                     <div class="squad-card-inner">
                         <div class="squad-front">
@@ -1238,15 +1054,11 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
-
-        <!-- ── MIDFIELDERS ── -->
         <div class="squad-group">
             <h3 class="squad-position-title">Midfielders</h3>
             <div class="squad-grid">
-
                 <div class="squad-card">
                     <div class="squad-card-inner">
                         <div class="squad-front">
@@ -1284,7 +1096,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="squad-card">
                     <div class="squad-card-inner">
                         <div class="squad-front">
@@ -1322,7 +1133,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="squad-card">
                     <div class="squad-card-inner">
                         <div class="squad-front">
@@ -1359,7 +1169,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="squad-card">
                     <div class="squad-card-inner">
                         <div class="squad-front">
@@ -1396,7 +1205,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="squad-card">
                     <div class="squad-card-inner">
                         <div class="squad-front">
@@ -1433,7 +1241,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="squad-card">
                     <div class="squad-card-inner">
                         <div class="squad-front">
@@ -1470,15 +1277,11 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
-
-        <!-- ── ATTACKERS ── -->
         <div class="squad-group">
             <h3 class="squad-position-title">Attackers</h3>
             <div class="squad-grid">
-
                 <div class="squad-card">
                     <div class="squad-card-inner">
                         <div class="squad-front">
@@ -1516,7 +1319,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="squad-card">
                     <div class="squad-card-inner">
                         <div class="squad-front">
@@ -1554,7 +1356,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="squad-card">
                     <div class="squad-card-inner">
                         <div class="squad-front">
@@ -1591,7 +1392,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="squad-card">
                     <div class="squad-card-inner">
                         <div class="squad-front">
@@ -1628,7 +1428,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="squad-card">
                     <div class="squad-card-inner">
                         <div class="squad-front">
@@ -1665,7 +1464,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="squad-card">
                     <div class="squad-card-inner">
                         <div class="squad-front">
@@ -1702,40 +1500,27 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
-
     </div>
 </section>
-<!-- ===== GREATEST VICTORIES ===== -->
-<section class="victories-section">
-
+<section class="victories-section" id="victories">
     <div class="victories-bg"></div>
     <div class="victories-overlay"></div>
-
     <div class="victories-content">
-
         <p class="victories-eyebrow">Greatest Victories</p>
         <h2 class="victories-heading">Nights That Wrote History</h2>
         <p class="victories-subtext">The moments that made the world stop and watch.</p>
-
         <div class="victories-timeline">
-
             <div class="timeline-line"></div>
-
-            <!-- ===== 2014 UCL FINAL ===== -->
             <div class="victory-item left">
-                
                 <div class="victory-card">
-
                     <div class="victory-photo">
                         <img src="assets/La_decima.jpg" alt="La Decima" class="victory-img">
                         <div class="victory-photo-overlay">
                             <span class="victory-score">4 — 1</span>
                         </div>
                     </div>
-
                     <div class="victory-details">
                         <div class="victory-meta">
                             <span class="victory-badge">UCL Final</span>
@@ -1751,15 +1536,10 @@
                             most emotional night in the club's modern history.
                         </p>
                     </div>
-
                 </div>
             </div>
-
-            <!-- ===== 2017 UCL FINAL ===== -->
             <div class="victory-item right">
-               
                 <div class="victory-card">
-
                     <div class="victory-details">
                         <div class="victory-meta">
                             <span class="victory-badge">UCL Final</span>
@@ -1775,29 +1555,22 @@
                             a masterclass that left the footballing world speechless.
                         </p>
                     </div>
-
                     <div class="victory-photo">
                         <img src="assets/2017final.webp" alt="2017 UCL Final" class="victory-img">
                         <div class="victory-photo-overlay right-overlay">
                             <span class="victory-score">4 — 1</span>
                         </div>
                     </div>
-
                 </div>
             </div>
-
-            <!-- ===== 2022 UCL SF vs MAN CITY ===== -->
             <div class="victory-item left">
-               
                 <div class="victory-card">
-
                     <div class="victory-photo">
                         <img src="assets/2022sf.webp" alt="2022 vs Man City" class="victory-img">
                         <div class="victory-photo-overlay">
                             <span class="victory-score">3 — 1</span>
                         </div>
                     </div>
-
                     <div class="victory-details">
                         <div class="victory-meta">
                             <span class="victory-badge">UCL Semi Final</span>
@@ -1814,15 +1587,10 @@
                             one of the most breathtaking comebacks in UCL history.
                         </p>
                     </div>
-
                 </div>
             </div>
-
-            <!-- ===== 2022 UCL FINAL ===== -->
             <div class="victory-item right">
-                
                 <div class="victory-card">
-
                     <div class="victory-details">
                         <div class="victory-meta">
                             <span class="victory-badge">UCL Final</span>
@@ -1840,33 +1608,24 @@
                             The greatest compliment a keeper has ever received.
                         </p>
                     </div>
-
                     <div class="victory-photo">
                         <img src="assets/2022final.webp" alt="2022 UCL Final" class="victory-img">
                         <div class="victory-photo-overlay right-overlay">
                             <span class="victory-score">1 — 0</span>
                         </div>
                     </div>
-
                 </div>
             </div>
-
         </div>
     </div>
 </section>
-<!-- ===== TEAM RECORDS ===== -->
 <section class="records-section">
-
     <div class="records-bg"></div>
     <div class="records-overlay"></div>
-
     <div class="records-content">
-
         <p class="records-eyebrow">Team Records</p>
         <h2 class="records-heading">Where Legends Become Numbers</h2>
         <p class="records-subtext">The marks of greatness that no one else has reached.</p>
-
-        <!-- ===== RECORD 1 — BACK TO BACK TO BACK ===== -->
         <div class="record-item record-featured">
             <div class="record-photo-side">
                 <img src="assets/zidane.png" alt="Zinedine Zidane" class="record-photo">
@@ -1884,9 +1643,9 @@
                             <h3 class="record-title">Back to Back to Back</h3>
                             <p class="record-subtitle">UEFA Champions League · 2016 · 2017 · 2018</p>
                             <p class="record-desc">
-                                Under Zinedine Zidane, Real Madrid achieved what no club 
-                                had ever done before — three consecutive Champions League 
-                                titles. Not once. Not twice. Three times in a row. 
+                                Under Zinedine Zidane, Real Madrid achieved what no club
+                                had ever done before — three consecutive Champions League
+                                titles. Not once. Not twice. Three times in a row.
                                 The greatest managerial achievement in European football history.
                             </p>
                             <span class="record-tag">Only Club In History</span>
@@ -1895,76 +1654,56 @@
                 </div>
             </div>
         </div>
-
-        <!-- Bottom 4 Records Grid -->
         <div class="records-grid">
-
-            <!-- RECORD 2 — Longest Unbeaten Run -->
             <div class="record-card">
                 <span class="record-card-number">43</span>
                 <div class="record-card-divider"></div>
                 <h4 class="record-card-title">Longest Unbeaten Run</h4>
                 <p class="record-card-desc">
-                    43 games without defeat in the 1988/89 season. 
+                    43 games without defeat in the 1988/89 season.
                     A record that still stands in Spanish football history.
                 </p>
                 <span class="record-card-tag">1988 / 89</span>
             </div>
-
-            <!-- RECORD 3 — Biggest Win -->
             <div class="record-card">
                 <span class="record-card-number">11-1</span>
                 <div class="record-card-divider"></div>
                 <h4 class="record-card-title">Biggest Win Ever</h4>
                 <p class="record-card-desc">
-                    An 11-1 demolition of Barcelona in 1943. 
+                    An 11-1 demolition of Barcelona in 1943.
                     The most one-sided El Clasico in the history of the fixture.
                 </p>
                 <span class="record-card-tag">vs Barcelona · 1943</span>
             </div>
-
-            <!-- RECORD 4 — Most UCL Titles -->
             <div class="record-card">
                 <span class="record-card-number">15</span>
                 <div class="record-card-divider"></div>
                 <h4 class="record-card-title">Most UCL Titles Ever</h4>
                 <p class="record-card-desc">
-                    15 European Cups. The next closest club has 8. 
+                    15 European Cups. The next closest club has 8.
                     No one has ever come close to Real Madrid in Europe.
                 </p>
                 <span class="record-card-tag">Unmatched · Unbeaten</span>
             </div>
-
-            <!-- RECORD 5 — First to Retain UCL -->
             <div class="record-card">
                 <span class="record-card-number">1st</span>
                 <div class="record-card-divider"></div>
                 <h4 class="record-card-title">First to Retain UCL</h4>
                 <p class="record-card-desc">
-                    In 2017, Real Madrid became the first club in the 
+                    In 2017, Real Madrid became the first club in the
                     Champions League era to successfully defend the trophy.
                 </p>
                 <span class="record-card-tag">2016 · 2017 · Cardiff</span>
             </div>
-
         </div>
-
     </div>
-
 </section>
-<!-- ===== TROPHY CABINET ===== -->
-<section class="trophy-section">
-
+<section class="trophy-section" id="trophies">
     <div class="trophy-bg"></div>
     <div class="trophy-overlay"></div>
-
     <div class="trophy-content">
-
-        <!-- Title -->
         <p class="trophy-eyebrow">Trophy Cabinet</p>
         <h2 class="trophy-heading">The Cabinet of Kings</h2>
-
-        <!-- Glorious Paragraph -->
         <p class="trophy-para">
             No cabinet in football tells a story like this one.
             Real Madrid has claimed over 100 official major honours —
@@ -1975,52 +1714,35 @@
             This is a declaration. Built over 122 years, trophy by trophy,
             Real Madrid has turned winning into an identity.
         </p>
-
-        <!-- Trophy Photo -->
         <div class="trophy-photo-wrapper">
             <img src="assets/trophies.webp" alt="Real Madrid Trophy Cabinet" class="trophy-photo">
             <div class="trophy-photo-overlay"></div>
         </div>
-
-        <!-- Statement Text -->
         <p class="trophy-statement">We Have What Others Dream Of</p>
-
     </div>
-
 </section>
-<!-- ===== STADIUM SECTION ===== -->
-<section class="stadium-section">
-
+<section class="stadium-section" id="stadium">
     <div class="stadium-bg"></div>
     <div class="stadium-overlay"></div>
-
     <div class="stadium-content">
-
-        <!-- Title -->
         <p class="stadium-eyebrow">Home Ground</p>
         <h2 class="stadium-heading">The Fortress</h2>
-
-        <!-- TOP ROW — Morning photo left, intro right -->
         <div class="stadium-top-row">
-
-            <!-- Morning Photo -->
             <div class="stadium-morning-wrapper">
                 <img src="assets/santiago_m.jpg" alt="Bernabeu Morning" class="stadium-morning-img">
                 <div class="stadium-morning-overlay"></div>
             </div>
-
-            <!-- Right Side Text -->
             <div class="stadium-intro">
                 <h3 class="stadium-name">Santiago Bernabéu</h3>
                 <p class="stadium-tagline">The Fortress of Real Madrid</p>
                 <p class="stadium-description">
-                    Standing tall in the heart of Madrid since 1947, 
-                    the Santiago Bernabéu is more than a stadium. 
-                    It is a cathedral of football — a place where legends 
-                    are born, where history is written, and where opposing 
-                    teams come to face their greatest fear. 
-                    With a capacity of 81,044 and a retractable roof 
-                    completed in 2023, the Bernabéu stands today as 
+                    Standing tall in the heart of Madrid since 1947,
+                    the Santiago Bernabéu is more than a stadium.
+                    It is a cathedral of football — a place where legends
+                    are born, where history is written, and where opposing
+                    teams come to face their greatest fear.
+                    With a capacity of 81,044 and a retractable roof
+                    completed in 2023, the Bernabéu stands today as
                     the finest stadium on the planet.
                 </p>
                 <div class="stadium-quick-facts">
@@ -2042,10 +1764,7 @@
                     </div>
                 </div>
             </div>
-
         </div>
-
-        <!-- QUOTE STRIP -->
         <div class="stadium-quote-strip">
             <span class="quote-mark">"</span>
             <p class="stadium-quote">
@@ -2053,78 +1772,52 @@
             </p>
             <span class="quote-mark">"</span>
         </div>
-
-        <!-- BOTTOM ROW — Fun facts left, night photo right -->
         <div class="stadium-bottom-row">
-
-            <!-- Fun Facts -->
             <div class="stadium-facts">
                 <h3 class="facts-heading">Did You Know?</h3>
                 <ul class="facts-list">
                     <li class="fact-item">
-                       
                         <p>The Bernabéu has hosted <strong>4 UEFA Champions League Finals</strong> — more than any other Spanish stadium.</p>
                     </li>
                     <li class="fact-item">
-                      
                         <p>The iconic <strong>retractable roof</strong> took 4 years to construct and was completed in 2023.</p>
                     </li>
                     <li class="fact-item">
-                       
                         <p>The stadium museum welcomes over <strong>1 million visitors</strong> every single year.</p>
                     </li>
                     <li class="fact-item">
-                       
                         <p>Ranked the <strong>best stadium in the world</strong> in 2023 by multiple global football publications.</p>
                     </li>
                     <li class="fact-item">
-                       
                         <p>Features a breathtaking <strong>360° wraparound LED display</strong> on the roof interior.</p>
                     </li>
                     <li class="fact-item">
-                        
                         <p>Named after <strong>Santiago Bernabéu de Yeste</strong> — a former player who became the club's most influential president.</p>
                     </li>
                 </ul>
             </div>
-
-            <!-- Night Photo -->
             <div class="stadium-night-wrapper">
                 <img src="assets/santiago_n.webp" alt="Bernabeu Night" class="stadium-night-img">
                 <div class="stadium-night-overlay"></div>
             </div>
-
         </div>
-
     </div>
-
 </section>
-<!-- ===== FOOTER ===== -->
 <footer class="footer">
-
     <div class="footer-top-border"></div>
-
     <div class="footer-content">
-
-        <!-- RM Logo -->
         <div class="footer-logo-block">
             <img src="assets/rmlogo.png" alt="Real Madrid" class="footer-rm-logo">
         </div>
-
-        <!-- Peter Drury Quote -->
         <div class="footer-quote-block">
-            <p class="footer-quote">"Real Madrid is a miracle club."</p>
+            <p class="footer-quote">"Real Madrid is a miracle club"</p>
             <span class="footer-quote-author">— Peter Drury</span>
         </div>
-
-        <!-- Signature + Name -->
         <div class="footer-creator-block">
             <img src="assets/aj_sig.png" alt="Ankit Jana Signature" class="footer-signature">
             <p class="footer-creator-name">Created by Ankit Jana</p>
-            <p class="footer-creator-title">About to be 2nd Year Student at NIT Durgapur</p>
+            <p class="footer-creator-title">2nd Year Student at NIT Durgapur</p>
         </div>
-
-        <!-- Tribute Line -->
         <div class="footer-tribute-block">
             <p class="footer-tribute">
                 A tribute to the greatest club the world has ever seen.
@@ -2135,12 +1828,10 @@
                 you're one of us.. Hala Madrid!! 🤍
             </p>
         </div>
-
-        <!-- Instagram -->
         <div class="footer-contact-block">
             <p class="footer-contact-text">Contact me on</p>
-            <a href="https://www.instagram.com/ankitjana_01" 
-               target="_blank" 
+            <a href="https://www.instagram.com/ankitjana_01"
+               target="_blank"
                class="footer-insta-link">
                 <svg class="insta-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
@@ -2150,18 +1841,12 @@
                 <span class="insta-handle">@ankitjana_01</span>
             </a>
         </div>
-
     </div>
-
-    <!-- Bottom Strip -->
     <div class="footer-bottom-strip">
         <p class="footer-copyright">© 2026 Nexcharis · All Rights Reserved · A Real Madrid Fan Portal</p>
     </div>
-
     <div class="footer-bottom-border"></div>
-
 </footer>
 <script src="script.js"></script>
-
 </body>
 </html>

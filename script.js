@@ -1,5 +1,3 @@
-// Counter Animation
-
 const counters = document.querySelectorAll('.card-number');
 
 counters.forEach(counter => {
@@ -7,7 +5,7 @@ counters.forEach(counter => {
     const prefix = counter.dataset.prefix || '';
     const suffix = counter.dataset.suffix || '';
 
-    const increment = target / 200;
+    const increment = target / 500;
     let current = 0;
 
     const timer = setInterval(() => {
@@ -20,11 +18,8 @@ counters.forEach(counter => {
             counter.textContent =
                 prefix + Math.floor(current) + suffix;
         }
-    }, 10);
+    }, 12);
 });
-
-
-// Hall of Fame Stat Bars
 
 const observer = new IntersectionObserver(
     entries => {
