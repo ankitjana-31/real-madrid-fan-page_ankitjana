@@ -1,24 +1,16 @@
 {
-  "name": "real-madrid-website",
+  "name": "real-madrid-fan-page",
   "version": "1.0.0",
-  "description": "A website dedicated to my Club  Real Madrid CF, The LOS BLANCOSSSS!! built using HTML, CSS, and JavaScript( used for  the Animated statistics counters )",
-  "main": "script.js",
+  "description": "Real Madrid CF fan portal with player management, quiz, and leaderboard backend.",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js",
+    "dev": "node server.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ankitjana-31/real-madrid-fan-page_ankitjana.git"
-  },
-  "keywords": [],
-  "author": "",
+  "keywords": ["real-madrid", "express", "fan-page"],
+  "author": "Ankit Jana",
   "license": "ISC",
-  "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/ankitjana-31/real-madrid-fan-page_ankitjana/issues"
-  },
-  "homepage": "https://github.com/ankitjana-31/real-madrid-fan-page_ankitjana#readme",
   "dependencies": {
-    "express": "^5.2.1"
+    "express": "^4.19.2"
   }
 }

@@ -1,0 +1,415 @@
+[
+  {
+    "id": 1,
+    "name": "Thibaut Courtois",
+    "number": 1,
+    "role": "Goalkeeper",
+    "position": "Goalkeeper",
+    "nation": "Belgium",
+    "flag": "🇧🇪",
+    "image": "assets/Courtois.png",
+    "bio": "The wall between the posts. Courtois is arguably the best goalkeeper in the world — his 2018 World Cup Golden Glove and 2022 UCL Final heroics prove it.",
+    "stats": {
+      "Clean Sheets": "102",
+      "Appearances": "262",
+      "Save %": "74%",
+      "UCL Titles": "2"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Andriy Lunin",
+    "number": 13,
+    "role": "Goalkeeper",
+    "position": "Goalkeeper",
+    "nation": "Ukraine",
+    "flag": "🇺🇦",
+    "image": "assets/Lunin.png",
+    "bio": "The Ukrainian stopper who proved his worth when Courtois was injured. Cool under pressure and a future number one in the making.",
+    "stats": {
+      "Clean Sheets": "28",
+      "Appearances": "67",
+      "Save %": "71%",
+      "UCL Titles": "1"
+    }
+  },
+  {
+    "id": 3,
+    "name": "Trent Alexander-Arnold",
+    "number": 12,
+    "role": "Right Back",
+    "position": "Defender",
+    "nation": "England",
+    "flag": "",
+    "image": "assets/Trent.png",
+    "bio": "One of the most technically gifted fullbacks ever. His passing range and vision from right back are completely unique in world football.",
+    "stats": {
+      "Appearances": "32",
+      "Assists": "9",
+      "Goals": "4",
+      "Pass Acc.": "89%"
+    }
+  },
+  {
+    "id": 4,
+    "name": "Éder Militão",
+    "number": 3,
+    "role": "Centre Back",
+    "position": "Defender",
+    "nation": "Brazil",
+    "flag": "🇧🇷",
+    "image": "assets/Eder.png",
+    "bio": "Explosive, powerful and relentless. Militão is the defensive rock at the heart of Madrid's backline — pace to burn and a warrior's mentality.",
+    "stats": {
+      "Appearances": "178",
+      "Goals": "11",
+      "Tackles/G": "3.2",
+      "UCL Titles": "2"
+    }
+  },
+  {
+    "id": 5,
+    "name": "Antonio Rüdiger",
+    "number": 22,
+    "role": "Centre Back",
+    "position": "Defender",
+    "nation": "Germany",
+    "flag": "",
+    "image": "assets/Rudiger.png",
+    "bio": "Fearless. Ferocious. Rüdiger brings an intensity to Real Madrid's defence that strikers genuinely fear. A commanding presence every single game.",
+    "stats": {
+      "Appearances": "112",
+      "Goals": "6",
+      "Clearances": "4.8/G",
+      "Duels Won": "68%"
+    }
+  },
+  {
+    "id": 6,
+    "name": "Dean Huijsen",
+    "number": 24,
+    "role": "Centre Back",
+    "position": "Defender",
+    "nation": "Spain",
+    "flag": "",
+    "image": "assets/dean.png",
+    "bio": "The future of Madrid's defence. Tall, composed and technically gifted, Huijsen is one of Europe's most exciting young centre backs.",
+    "stats": {
+      "Appearances": "28",
+      "Goals": "3",
+      "Interceptions": "2.4/G",
+      "Pass Acc.": "87%"
+    }
+  },
+  {
+    "id": 7,
+    "name": "Raúl Asencio",
+    "number": 17,
+    "role": "Centre Back",
+    "position": "Defender",
+    "nation": "Spain",
+    "flag": "",
+    "image": "assets/raul.png",
+    "bio": "A homegrown talent breaking through at the highest level. Asencio has shown maturity and composure far beyond his years in a Real Madrid shirt.",
+    "stats": {
+      "Appearances": "22",
+      "Goals": "2",
+      "Clearances": "3.1/G",
+      "Pass Acc.": "85%"
+    }
+  },
+  {
+    "id": 8,
+    "name": "Álvaro Carreras",
+    "number": 18,
+    "role": "Left Back",
+    "position": "Defender",
+    "nation": "Spain",
+    "flag": "",
+    "image": "assets/Carreras.png",
+    "bio": "An energetic left back with an engine that never stops. Carreras brings dynamism and creativity going forward — a modern fullback through and through.",
+    "stats": {
+      "Appearances": "30",
+      "Assists": "6",
+      "Goals": "2",
+      "Crosses/G": "3.4"
+    }
+  },
+  {
+    "id": 9,
+    "name": "Fran García",
+    "number": 20,
+    "role": "Left Back",
+    "position": "Defender",
+    "nation": "Spain",
+    "flag": "",
+    "image": "assets/Garcia.png",
+    "bio": "A reliable and hardworking left back who gives everything for the badge. García is a dependable option who never lets the team down.",
+    "stats": {
+      "Appearances": "58",
+      "Assists": "7",
+      "Goals": "1",
+      "Tackles/G": "2.8"
+    }
+  },
+  {
+    "id": 10,
+    "name": "Ferland Mendy",
+    "number": 23,
+    "role": "Left Back",
+    "position": "Defender",
+    "nation": "France",
+    "flag": "",
+    "image": "assets/Mendy.png",
+    "bio": "Rapid and defensively solid, Mendy is one of the quickest fullbacks in Europe. When fit, he is one of the first names on the teamsheet.",
+    "stats": {
+      "Appearances": "162",
+      "Assists": "12",
+      "Goals": "3",
+      "UCL Titles": "3"
+    }
+  },
+  {
+    "id": 11,
+    "name": "Marc Cucurella",
+    "number": 32,
+    "role": "Left Back",
+    "position": "Defender",
+    "nation": "Spain",
+    "flag": "",
+    "image": "assets/Cucurella.png",
+    "bio": "Tenacious and tireless, Cucurella brings fight and versatility to the backline. His determination and work rate make him a valuable squad option.",
+    "stats": {
+      "Appearances": "18",
+      "Assists": "2",
+      "Tackles/G": "3.1",
+      "Duels Won": "61%"
+    }
+  },
+  {
+    "id": 12,
+    "name": "Jude Bellingham",
+    "number": 5,
+    "role": "Attacking Midfielder",
+    "position": "Midfielder",
+    "nation": "England",
+    "flag": "",
+    "image": "assets/Bellingham_1.png",
+    "bio": "The new Galáctico. Bellingham arrived and immediately became one of the best players in the world — goals, assists, leadership. He is the future of this club.",
+    "stats": {
+      "Appearances": "82",
+      "Goals": "36",
+      "Assists": "22",
+      "La Liga Titles": "1"
+    },
+    "backImage": "assets/Bellingham_2.png",
+    "signature": {
+      "text": "My Favourite Player",
+      "class": "fav-player"
+    }
+  },
+  {
+    "id": 13,
+    "name": "Federico Valverde",
+    "number": 8,
+    "role": "Central Midfielder",
+    "position": "Midfielder",
+    "nation": "Uruguay",
+    "flag": "",
+    "image": "assets/velverde_1.png",
+    "bio": "The engine of Real Madrid's midfield. Valverde covers every blade of grass, wins every duel and still has the quality to decide big games.",
+    "stats": {
+      "Appearances": "218",
+      "Goals": "28",
+      "Assists": "24",
+      "UCL Titles": "2"
+    },
+    "backImage": "assets/velverde_2.png",
+    "signature": {
+      "text": "Oh Captain My Captain",
+      "class": "captain-sig"
+    }
+  },
+  {
+    "id": 14,
+    "name": "Aurélien Tchouaméni",
+    "number": 14,
+    "role": "Defensive Midfielder",
+    "position": "Midfielder",
+    "nation": "France",
+    "flag": "",
+    "image": "assets/aurelian.png",
+    "bio": "The shield in front of the defence. Tchouaméni reads the game beautifully, breaks up play and recycles possession with the composure of a veteran.",
+    "stats": {
+      "Appearances": "112",
+      "Goals": "8",
+      "Tackles/G": "3.8",
+      "Pass Acc.": "88%"
+    }
+  },
+  {
+    "id": 15,
+    "name": "Eduardo Camavinga",
+    "number": 6,
+    "role": "Central Midfielder",
+    "position": "Midfielder",
+    "nation": "France",
+    "flag": "",
+    "image": "assets/camavinga.png",
+    "bio": "Explosive, dynamic and technically brilliant. Camavinga is one of the most exciting midfielders in Europe — still only getting started at the highest level.",
+    "stats": {
+      "Appearances": "148",
+      "Goals": "9",
+      "Assists": "14",
+      "UCL Titles": "2"
+    }
+  },
+  {
+    "id": 16,
+    "name": "Arda Güler",
+    "number": 15,
+    "role": "Attacking Midfielder",
+    "position": "Midfielder",
+    "nation": "Turkey",
+    "flag": "",
+    "image": "assets/arda.png",
+    "bio": "The Turkish gem. Güler has a left foot that produces pure magic — his curling strikes and creative brilliance make him one of the most exciting young players alive.",
+    "stats": {
+      "Appearances": "56",
+      "Goals": "14",
+      "Assists": "8",
+      "Key Passes/G": "2.6"
+    }
+  },
+  {
+    "id": 17,
+    "name": "Brahim Díaz",
+    "number": 21,
+    "role": "Attacking Midfielder",
+    "position": "Midfielder",
+    "nation": "Morocco",
+    "flag": "",
+    "image": "assets/brahim_1.png",
+    "bio": "Tricky, electric and always threatening. Brahim is the kind of player who can unlock any defence with a single moment of individual brilliance.",
+    "stats": {
+      "Appearances": "98",
+      "Goals": "18",
+      "Assists": "16",
+      "Dribbles/G": "2.9"
+    },
+    "backImage": "assets/brahim_2.png"
+  },
+  {
+    "id": 18,
+    "name": "Vinícius Júnior",
+    "number": 7,
+    "role": "Left Winger",
+    "position": "Attacker",
+    "nation": "Brazil",
+    "flag": "",
+    "image": "assets/Vini_1.png",
+    "bio": "The most terrifying winger on the planet. Vini Jr is unplayable on his day — electric pace, dazzling skill, and a big-game mentality that defines Real Madrid.",
+    "stats": {
+      "Appearances": "248",
+      "Goals": "98",
+      "Assists": "76",
+      "UCL Titles": "2"
+    },
+    "backImage": "assets/Vini_2.png",
+    "signature": {
+      "text": "Magic",
+      "class": "vini-sig"
+    }
+  },
+  {
+    "id": 19,
+    "name": "Kylian Mbappé",
+    "number": 10,
+    "role": "Centre Forward",
+    "position": "Attacker",
+    "nation": "France",
+    "flag": "🇫🇷",
+    "image": "assets/mbappe_1.png",
+    "bio": "The fastest player in the world in a Real Madrid shirt. Mbappé is a generational talent — a World Cup winner with pace, power and lethal finishing.",
+    "stats": {
+      "Appearances": "52",
+      "Goals": "34",
+      "Assists": "12",
+      "Top Speed": "36km/h"
+    },
+    "backImage": "assets/mbappe_2.png",
+    "signature": {
+      "text": "Ninja Turtle",
+      "class": "ninja-sig"
+    }
+  },
+  {
+    "id": 20,
+    "name": "Rodrygo Goes",
+    "number": 11,
+    "role": "Right Winger",
+    "position": "Attacker",
+    "nation": "Brazil",
+    "flag": "🇧🇷",
+    "image": "assets/rodrygo.png",
+    "bio": "Mr. Champions League. Rodrygo has a habit of scoring in the biggest moments — his late goals have sent Real Madrid through in Europe time and time again.",
+    "stats": {
+      "Appearances": "198",
+      "Goals": "58",
+      "Assists": "42",
+      "UCL Titles": "2"
+    }
+  },
+  {
+    "id": 21,
+    "name": "Endrick",
+    "number": 9,
+    "role": "Centre Forward",
+    "position": "Attacker",
+    "nation": "Brazil",
+    "flag": "🇧🇷",
+    "image": "assets/Endrick.png",
+    "bio": "A teenager with the mentality of a champion. Endrick is Brazil's next superstar — powerful, fearless and already showing flashes of something truly special.",
+    "stats": {
+      "Appearances": "42",
+      "Goals": "12",
+      "Assists": "4",
+      "Age": "18"
+    }
+  },
+  {
+    "id": 22,
+    "name": "Gonzalo García",
+    "number": 29,
+    "role": "Centre Forward",
+    "position": "Attacker",
+    "nation": "Spain",
+    "flag": "🇪🇸",
+    "image": "assets/gonzalo_1.png",
+    "bio": "A homegrown striker making his mark in the first team. Clinical in front of goal and hungry to prove himself at the very highest level.",
+    "stats": {
+      "Appearances": "24",
+      "Goals": "8",
+      "Assists": "3",
+      "Shot Acc.": "58%"
+    },
+    "backImage": "assets/gonzalo_2.png"
+  },
+  {
+    "id": 23,
+    "name": "Franco Mastantuono",
+    "number": 16,
+    "role": "Attacking Midfielder / Winger",
+    "position": "Attacker",
+    "nation": "Argentina",
+    "flag": "🇦🇷",
+    "image": "assets/Mastantuono.png",
+    "bio": "The Argentine wonderkid. Mastantuono arrived at Madrid as one of the most coveted teenagers in the world — creative, skilful and destined for greatness.",
+    "stats": {
+      "Appearances": "18",
+      "Goals": "4",
+      "Assists": "5",
+      "Age": "17"
+    }
+  }
+]

@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "question": "In which year was Real Madrid founded?",
+    "options": ["1898", "1902", "1910", "1920"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 2,
+    "question": "How many UEFA Champions League titles has Real Madrid won?",
+    "options": ["13", "14", "15", "16"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 3,
+    "question": "Who scored the 93rd-minute equalizer in the 2014 UCL Final (La Décima)?",
+    "options": ["Sergio Ramos", "Cristiano Ronaldo", "Karim Benzema", "Gareth Bale"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 4,
+    "question": "What is the nickname of Real Madrid's home stadium?",
+    "options": ["Camp Nou", "Santiago Bernabéu", "San Siro", "Wembley"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 5,
+    "question": "Which manager led Real Madrid to three consecutive Champions League titles (2016-2018)?",
+    "options": ["Carlo Ancelotti", "José Mourinho", "Zinedine Zidane", "Rafael Benítez"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 6,
+    "question": "Who is Real Madrid's all-time top scorer?",
+    "options": ["Raúl González", "Karim Benzema", "Cristiano Ronaldo", "Alfredo Di Stéfano"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 7,
+    "question": "In which stadium did Real Madrid win the 2018 Champions League final?",
+    "options": ["Millennium Stadium, Cardiff", "Stade de France, Paris", "Wembley, London", "San Siro, Milan"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 8,
+    "question": "Who holds the record for most appearances for Real Madrid?",
+    "options": ["Iker Casillas", "Raúl González", "Sergio Ramos", "Marcelo"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 9,
+    "question": "What does 'Hala Madrid' mean in English?",
+    "options": ["Long Live Madrid", "Go Madrid", "Madrid Forever", "Madrid Kings"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 10,
+    "question": "Which player famously said Klopp called Courtois 'a f***ing octopus' after the 2022 UCL Final?",
+    "options": ["It was Klopp himself who said it about Courtois", "Salah", "Van Dijk", "Alisson"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 11,
+    "question": "Who won the Ballon d'Or in 2018 while playing for Real Madrid, ending a decade of Messi-Ronaldo dominance?",
+    "options": ["Toni Kroos", "Luka Modrić", "Sergio Ramos", "Karim Benzema"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 12,
+    "question": "How many La Liga titles has Real Madrid won (as referenced on the site)?",
+    "options": ["30", "33", "35", "38"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 13,
+    "question": "Which club did Real Madrid beat 11-1 in 1943, the biggest win in a Clásico?",
+    "options": ["Atlético Madrid", "Barcelona", "Valencia", "Sevilla"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 14,
+    "question": "What year did the Santiago Bernabéu's renovated retractable roof get completed?",
+    "options": ["2019", "2021", "2023", "2024"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 15,
+    "question": "Who scored two goals in 97 seconds against Manchester City in the 2022 UCL semi-final comeback?",
+    "options": ["Vinícius Júnior", "Karim Benzema", "Rodrygo Goes", "Federico Valverde"],
+    "correctAnswer": 2
+  }
+]

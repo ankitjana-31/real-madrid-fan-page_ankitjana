@@ -2052,3 +2052,109 @@ body {
     height: 4px;
     background-color: rgb(252, 3, 98);
 }
+
+/* ===== SQUAD TOOLBAR: SEARCH, FILTER, EXPORT ===== */
+.squad-toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 60px;
+    padding: 20px 24px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+}
+
+.squad-search-wrap {
+    flex: 1;
+    min-width: 220px;
+}
+
+.squad-search-input {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 30px;
+    padding: 10px 18px;
+    color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.85rem;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+.squad-search-input::placeholder {
+    color: #777;
+}
+
+.squad-search-input:focus {
+    border-color: rgb(252, 3, 98);
+}
+
+.squad-filter-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.squad-filter-btn {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: #ccc;
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.squad-filter-btn:hover {
+    border-color: rgb(252, 3, 98);
+    color: #fff;
+}
+
+.squad-filter-btn.active {
+    background: rgb(252, 3, 98);
+    border-color: rgb(252, 3, 98);
+    color: #fff;
+}
+
+.squad-export-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.squad-results-count {
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.75rem;
+    color: #888;
+    margin-right: 4px;
+}
+
+.squad-export-btn {
+    background: transparent;
+    border: 1px solid rgba(255, 215, 0, 0.4);
+    color: rgba(255, 215, 0, 0.9);
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.squad-export-btn:hover {
+    background: rgba(255, 215, 0, 0.12);
+    border-color: rgba(255, 215, 0, 0.8);
+}
