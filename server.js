@@ -121,25 +121,14 @@ app.post('/api/quiz/submit', (req, res) => {
     const questions = readJSON(QUESTIONS_FILE);
 
     let score = 0;
-
     const results = questions.map(q => {
       const submitted = answers ? answers[q.id] : undefined;
       const correct = submitted === q.correctAnswer;
-
       if (correct) score++;
-
-      return {
-        id: q.id,
-        correct,
-        correctAnswer: q.correctAnswer
-      };
+      return { id: q.id, correct, correctAnswer: q.correctAnswer };
     });
 
-    res.json({
-      score,
-      total: questions.length,
-      results
-    });
+    res.json({ score, total: questions.length, results });
   } catch (err) {
     console.error(err);
     res.status(500).json({ error: 'Failed to grade quiz.' });
@@ -186,6 +175,10 @@ app.post('/api/leaderboard', (req, res) => {
   }
 });
 
-app.listen(PORT, () => {
-  console.log(`Real Madrid site backend running at http://localhost:${PORT}`);
-});
+if (require.main === module) {
+  app.listen(PORT, () => {
+    console.log(`Real Madrid site backend running at http://localhost:${PORT}`);
+  });
+}
+
+module.exports = app;
